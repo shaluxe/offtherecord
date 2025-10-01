@@ -5,3 +5,38 @@
   }
 </script>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Off the Record - The Gist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  var password = prompt("Enter password to view Off the Record:");
+  if (password !== "xoxo") {
+    document.body.innerHTML = "<h2>Access Denied 🚫</h2>";
+  }
+</script>
+
+<header>
+  <h1>★ The Gist ★</h1>
+  <nav>
+    <a href="index.html">Today</a>
+    <a href="moments.html">Moments</a>
+    <a href="vault.html">Vault</a>
+    <a href="gist.html">The Gist</a>
+    <a href="letters.html">Letters</a>
+    <a href="thoughts.html">Thoughts</a>
+  </nav>
+</header>
+
+<main>
+  <section class="post">
+    <h2>Quick Tea</h2>
+    <p>Someone borrowed my notes and totally didn’t return them. Drama. ☕</p>
+  </section>
+</main>
+</body>
+</html>
