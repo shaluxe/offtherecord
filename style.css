@@ -114,3 +114,44 @@ footer {
   box-shadow: 4px 4px #f2bfe5;
   position: relative;
 }
+
+.polaroid-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.polaroid {
+  background: #fff;
+  border: 2px solid #eee;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  width: 160px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 14px;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(-1deg) scale(1.03);
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+}
+
+.caption {
+  color: #555;
+}
+.polaroid {
+  padding: 10px 10px 30px 10px;
+  border-bottom: 30px solid white;
+}
