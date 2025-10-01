@@ -5,3 +5,39 @@
   }
 </script>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Off the Record - Vault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  var password = prompt("Enter password to view Off the Record:");
+  if (password !== "xoxo") {
+    document.body.innerHTML = "<h2>Access Denied 🚫</h2>";
+  }
+</script>
+
+<header>
+  <h1>★ Vault ★</h1>
+  <nav>
+    <a href="index.html">Today</a>
+    <a href="moments.html">Moments</a>
+    <a href="vault.html">Vault</a>
+    <a href="gist.html">The Gist</a>
+    <a href="letters.html">Letters</a>
+    <a href="thoughts.html">Thoughts</a>
+  </nav>
+</header>
+
+<main>
+  <section class="post">
+    <h2>September 15, 2025</h2>
+    <p>Old drama from last month… still hilarious to remember. 😂</p>
+    <p class="signature">XOXO, Off the Record</p>
+  </section>
+</main>
+</body>
+</html>
