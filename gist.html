@@ -1,42 +1,52 @@
-<script>
-  var password = prompt("Enter password to view Off the Record:");
-  if (password !== "xoxo") {
-    document.body.innerHTML = "<h2>Access Denied 🚫</h2>";
-  }
-</script>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Off the Record - The Gist</title>
+  <title>Off the Record ✧ The Gist</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script>
+    const allowed = prompt("Enter password to view Off the Record:");
+    if (allowed !== "xoxo") {
+      document.write("<h2 style='text-align:center;margin-top:100px;'>Access Denied 🚫</h2>");
+      throw new Error("Blocked");
+    }
+  </script>
 </head>
 <body>
-<script>
-  var password = prompt("Enter password to view Off the Record:");
-  if (password !== "xoxo") {
-    document.body.innerHTML = "<h2>Access Denied 🚫</h2>";
-  }
-</script>
+  <div class="wrapper">
 
-<header>
-  <h1>★ The Gist ★</h1>
-  <nav>
-    <a href="index.html">Today</a>
-    <a href="moments.html">Moments</a>
-    <a href="vault.html">Vault</a>
-    <a href="gist.html">The Gist</a>
-    <a href="letters.html">Letters</a>
-    <a href="thoughts.html">Thoughts</a>
-  </nav>
-</header>
+    <header>
+      <h1>✧ The Gist ✧</h1>
+      <nav>
+        <a href="index.html">Today</a>
+        <a href="moments.html">Moments</a>
+        <a href="vault.html">Vault</a>
+        <a href="gist.html">The Gist</a>
+        <a href="letters.html">Letters</a>
+        <a href="thoughts.html">Thoughts</a>
+      </nav>
+    </header>
 
-<main>
-  <section class="post">
-    <h2>Quick Tea</h2>
-    <p>Someone borrowed my notes and totally didn’t return them. Drama. ☕</p>
-  </section>
-</main>
+    <aside class="sidebar">
+      <h3>just so you know...</h3>
+      <p>Off the Record has eyes everywhere. 👀</p>
+      <img src="https://blinkies.cafe/b/display/5.gif" alt="secret blinkie">
+    </aside>
+
+    <main>
+      <section class="post">
+        <h2>Quick Tea 🍵</h2>
+        <p>Someone borrowed my notes and totally didn’t return them. Drama. ☕</p>
+        <p class="signature">XOXO, Off the Record</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>spilling secrets since forever • off the record ♡</p>
+    </footer>
+    
+  </div>
 </body>
 </html>
+
