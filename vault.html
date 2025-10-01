@@ -1,43 +1,51 @@
-<script>
-  var password = prompt("Enter password to view Off the Record:");
-  if (password !== "xoxo") {
-    document.body.innerHTML = "<h2>Access Denied 🚫</h2>";
-  }
-</script>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Off the Record - Vault</title>
+  <title>Off the Record ✧ Vault</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script>
+    const allowed = prompt("Enter password to view Off the Record:");
+    if (allowed !== "xoxo") {
+      document.write("<h2 style='text-align:center;margin-top:100px;'>Access Denied 🚫</h2>");
+      throw new Error("Blocked");
+    }
+  </script>
 </head>
 <body>
-<script>
-  var password = prompt("Enter password to view Off the Record:");
-  if (password !== "xoxo") {
-    document.body.innerHTML = "<h2>Access Denied 🚫</h2>";
-  }
-</script>
+  <div class="wrapper">
 
-<header>
-  <h1>★ Vault ★</h1>
-  <nav>
-    <a href="index.html">Today</a>
-    <a href="moments.html">Moments</a>
-    <a href="vault.html">Vault</a>
-    <a href="gist.html">The Gist</a>
-    <a href="letters.html">Letters</a>
-    <a href="thoughts.html">Thoughts</a>
-  </nav>
-</header>
+    <header>
+      <h1>✧ Vault ✧</h1>
+      <nav>
+        <a href="index.html">Today</a>
+        <a href="moments.html">Moments</a>
+        <a href="vault.html">Vault</a>
+        <a href="gist.html">The Gist</a>
+        <a href="letters.html">Letters</a>
+        <a href="thoughts.html">Thoughts</a>
+      </nav>
+    </header>
 
-<main>
-  <section class="post">
-    <h2>September 15, 2025</h2>
-    <p>Old drama from last month… still hilarious to remember. 😂</p>
-    <p class="signature">XOXO, Off the Record</p>
-  </section>
-</main>
+    <aside class="sidebar">
+      <h3>locked up 🔐</h3>
+      <p>things we swore we'd never talk about again...</p>
+      <img src="https://blinkies.cafe/b/display/23.gif" alt="vault blinkie">
+    </aside>
+
+    <main>
+      <section class="post">
+        <h2>September 15, 2025</h2>
+        <p>Old drama from last month… still hilarious to remember. 😂</p>
+        <p class="signature">XOXO, Off the Record</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>top secret memories • off the record ♡</p>
+    </footer>
+
+  </div>
 </body>
 </html>
