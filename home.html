@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Off the Record - Entry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    /* Background with soft pastel pink/blue */
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #f6d7db 30%, #a3c4f3 70%);
+      font-family: 'Pacifico', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #6b3a69;
+    }
+
+    .container {
+      background: #fff0f6;
+      border: 5px solid #ff90b3;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 144, 179, 0.6);
+      padding: 40px;
+      text-align: center;
+      width: 320px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px #ff90b3;
+    }
+
+    p {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+      letter-spacing: 1.2px;
+      color: #b94f7e;
+    }
+
+    input[type="password"] {
+      padding: 12px;
+      width: 80%;
+      border-radius: 10px;
+      border: 2px solid #ff90b3;
+      font-size: 1.1rem;
+      font-family: 'Press Start 2P', cursive;
+      outline: none;
+      text-align: center;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="password"]:focus {
+      border-color: #6b3a69;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #ff90b3;
+      border: none;
+      border-radius: 15px;
+      color: white;
+      font-family: 'Press Start 2P', cursive;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff90b3;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #b94f7e;
+      box-shadow: 0 0 15px #b94f7e;
+    }
+
+    .error-message {
+      margin-top: 15px;
+      font-family: 'Press Start 2P', cursive;
+      color: #b94f7e;
+      font-size: 0.85rem;
+      height: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Off the Record</h1>
+    <p>Enter the password to access</p>
+
+    <input type="password" id="passwordInput" placeholder="Password" autocomplete="off" />
+    <br />
+    <button onclick="checkPassword()">Enter</button>
+
+    <div class="error-message" id="errorMsg"></div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById('passwordInput').value.trim();
+      const errorMsg = document.getElementById('errorMsg');
+
+      if(input.toLowerCase() === 'xoxo') {
+        // Redirect to main site page after successful password
+        window.location.href = 'index.html';
+      } else {
+        errorMsg.textContent = "Oops! That's not it. Try again.";
+      }
+    }
+
+    // Optional: allow Enter key to submit
+    document.getElementById('passwordInput').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        checkPassword();
+      }
+    });
+  </script>
+
+</body>
+</html>
