@@ -1,1 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffebf0, #d0f0ff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(90deg, hotpink, violet, deepskyblue);
+  padding: 1rem;
+  border-bottom: 5px dotted yellow;
+}
+
+nav a {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 2px dashed hotpink;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background: hotpink;
+  color: white;
+}
+
+.post, .letter {
+  background: rgba(255,255,255,0.85);
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  width: 60%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0 #ff69b4;
+}
+
+.signature {
+  font-family: 'Pacifico', cursive;
+  color: deeppink;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Polaroid Gallery */
+.polaroid-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.polaroid {
+  background: white;
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  width: 200px;
+  border: 5px solid #fff;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  transform: rotate(-2deg);
+  transition: transform 0.2s;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-family: 'Pacifico', cursive;
+  font-size: 0.9rem;
+  color: deeppink;
+  margin-top: 0.5rem;
+}
 
